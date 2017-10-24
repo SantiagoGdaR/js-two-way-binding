@@ -41,4 +41,18 @@
             }
         }
     });
+
+    log = function() {
+        Object.keys(scope).forEach(function(key){
+            console.log(key + ': ' + scope[key]);
+        });
+    }
+
+    changeNameByCode = function() {
+        scope.name = 'name Changed by Code';
+    }
+
+    changeSurnameByCode = function() {
+        scope.surname = 'surname Changed by Code';
+    }
 })();
